@@ -33,4 +33,8 @@ sourceSets {
 This allows them to access the createTestUser function in shared/src/test/com/appt/shared
 
 
-Running `./gradlew test` executes the tests as expected, however Android Studio shows createTestUser function as a 
+Running `./gradlew test` executes the tests as expected, however Android Studio shows createTestUser function as an unresolvedReference.
+
+There is also a warning in the Android Studio event log:
+
+```Duplicate content roots detected: Path [SharedTestDir/shared/src/test/java] of module [SharedTestDir.app] was removed from modules [SharedTestDir.feature1, SharedTestDir.feature2]```
